@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "quit" >&3
+/var/lima/bin/limacreate "$1" "$2" || exit 1
+

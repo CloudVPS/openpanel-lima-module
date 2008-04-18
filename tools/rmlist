@@ -1,0 +1,2 @@
+#!/bin/sh
+/var/lima/bin/limaremove "$1" || exit 1

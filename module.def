@@ -1,0 +1,50 @@
+# ============================================================================
+# OpenPanel LIMA.module for creating mailinglists.
+# Copyright (C) 2008 PanelSix V.O.F.
+# ============================================================================
+module LIMA					< uuid 8ed052b4-8040-436b-ba84-6f440b88fe0a
+							< version 1.0
+							< languages en_EN
+							< apitype xml
+							
+
+# ============================================================================
+# CLASSES
+# ============================================================================
+class Mail:List				< uuid 01110b48-c704-4a77-9c00-f3bd3ed48cf9
+							< version 1
+							< requires Mail
+							< indexing manual
+							< parentrealm emailsuffix
+							< uniquein parent
+							< shortname list
+							< title Mailing List
+							< description Mailing list / discussion group
+							< explanation list.html
+							
+							< capabilities create update delete
+							
+							< metatype derived
+							< metabase Meta:Mail:Address
+							< metadescription List owned by $owner$
+	
+	string id				: List email address
+							< gridwidth 45
+	
+	string owner			: List owner address
+							< regexp .*@.*
+							< tooltip The address of the owner of the mailinglist, this user will get access to the list's administrative functions.
+							< gridwidth 55
+
+# ============================================================================
+# AUTHD
+# ============================================================================
+authd fileops
+	list_*					: /etc/postfix/openpanel
+							< user root
+							< group root
+							< perms 0644
+
+authd scripts
+	script mklist			< asuser lima
+	script rmlist			< asuser lima
