@@ -3,7 +3,7 @@ include makeinclude
 OBJ	= main.o version.o
 
 all: module.xml limamodule.exe
-	mkapp limamodule
+	grace mkapp limamodule
 	@mkdir -p tmp
 
 module.xml: module.def
@@ -14,7 +14,7 @@ limamodule.exe: $(OBJ)
 	../opencore/api/c++/lib/libcoremodule.a $(LIBS)
 
 version.cpp:
-	mkversion version.cpp
+	grace mkversion version.cpp
 
 clean:
 	rm -f *.o *.exe
