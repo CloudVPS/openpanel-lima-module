@@ -11,7 +11,7 @@ module.xml: module.def
 
 limamodule.exe: $(OBJ)
 	$(LD) $(LDFLAGS) -o limamodule.exe $(OBJ) \
-	../opencore/api/c++/lib/libcoremodule.a $(LIBS)
+	/usr/lib/opencore/libcoremodule.a $(LIBS)
 
 version.cpp:
 	grace mkversion version.cpp
