@@ -2,11 +2,11 @@ Source: openpanel-mod-lima
 Section: misc
 Priority: optional
 Maintainer: OpenPanel/Panel6 packager <packages@panelsix.com>
-Build-Depends: debhelper (>= 5)
+Build-Depends: debhelper (>= 5), libgrace-dbfile-devel, libgrace-dbfile, libgrace, libgrace-devel, openpanel-mkmodulexml, openpanel-core, openpanel-devel, libdb4.6-dev, libgdbm-dev
 Standards-Version: 3.7.2
 
 Package: openpanel-mod-lima
 Architecture: any
-Depends: , openpanel-core (>= 0.8.3), openpanel-mod-user, openpanel-mod-domain, openpanel-mod-postfixcourier, libgrace-querido, lima
+Depends: openpanel-core (>= 0.8.3), openpanel-mod-user, openpanel-mod-domain, openpanel-mod-postfixcourier, libgrace-querido, lima
 Description: LIMA mailinglist service configuration module
  OpenPanel module for driving LIMA on top of Postfix.
