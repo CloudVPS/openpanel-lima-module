@@ -8,5 +8,5 @@ Standards-Version: 3.7.2
 Package: openpanel-mod-lima
 Architecture: any
 Depends: openpanel-core (>= 0.8.3), openpanel-mod-user, openpanel-mod-domain, openpanel-mod-postfixcourier, libgrace-querido, lima
-Description: LIMA mailinglist service configuration module
+Description: OpenPanel module to configure theLIMA mailinglist service
  OpenPanel module for driving LIMA on top of Postfix.
