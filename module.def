@@ -13,6 +13,8 @@ module LIMA					< uuid 8ed052b4-8040-436b-ba84-6f440b88fe0a
 							< version 1.0
 							< languages en_EN
 							< apitype xml
+							< license GPLv3
+							< author OpenPanel
 							
 
 # ============================================================================
