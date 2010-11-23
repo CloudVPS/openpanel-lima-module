@@ -20,7 +20,7 @@ module.xml: module.def
 
 limamodule.exe: $(OBJ)
 	$(LD) $(LDFLAGS) -o limamodule.exe $(OBJ) \
-	/usr/lib/opencore/libcoremodule.a $(LIBS)
+	/usr/lib/openpanel-core/libcoremodule.a $(LIBS)
 
 version.cpp:
 	grace mkversion version.cpp

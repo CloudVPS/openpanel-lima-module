@@ -7,7 +7,7 @@
 // restrictions. For more information, please visit the Legal Information 
 // section of the OpenPanel website on http://www.openpanel.com/
 
-#include <opencore/moduleapp.h>
+#include <openpanel-core/moduleapp.h>
 #include "lima.h"
 
 #include <grace/file.h>
@@ -16,7 +16,7 @@
 
 APPOBJECT(limamoduleApp);
 
-#define PATH_STAGING "/var/opencore/conf/staging/LIMA"
+#define PATH_STAGING "/var/openpanel/conf/staging/LIMA"
 
 //  =========================================================================
 /// Main method.

@@ -11,7 +11,7 @@
 #ifndef _lima_H
 #define _lima_H 1
 #include <grace/application.h>
-#include <opencore/moduleapp.h>
+#include <openpanel-core/moduleapp.h>
 
 //  -------------------------------------------------------------------------
 /// Main application class.

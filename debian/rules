@@ -13,12 +13,12 @@
 BUILD_ROOT=$(CURDIR)/debian/tmp
 install:
 	rm -rf ${BUILD_ROOT}
-	mkdir -p ${BUILD_ROOT}/var/opencore/modules/LIMA.module
+	mkdir -p ${BUILD_ROOT}/var/openpanel/modules/LIMA.module
 	mkdir -p ${BUILD_ROOT}/etc/openpanel
-	cp -rf ./limamodule.app ${BUILD_ROOT}/var/opencore/modules/LIMA.module/
-	cp module.xml techsupport.* ${BUILD_ROOT}/var/opencore/modules/LIMA.module/
-	ln -sf limamodule.app/exec ${BUILD_ROOT}/var/opencore/modules/LIMA.module/action
-	install -m 755 verify ${BUILD_ROOT}/var/opencore/modules/LIMA.module/verify
+	cp -rf ./limamodule.app ${BUILD_ROOT}/var/openpanel/modules/LIMA.module/
+	cp module.xml techsupport.* ${BUILD_ROOT}/var/openpanel/modules/LIMA.module/
+	ln -sf limamodule.app/exec ${BUILD_ROOT}/var/openpanel/modules/LIMA.module/action
+	install -m 755 verify ${BUILD_ROOT}/var/openpanel/modules/LIMA.module/verify
 
 build:
 	./configure

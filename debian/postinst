@@ -31,8 +31,8 @@ case "$1" in
         touch /etc/postfix/openpanel/list_transports
         touch /etc/postfix/openpanel/list_virtuals
         /usr/sbin/postmap /etc/postfix/openpanel/list_transports /etc/postfix/openpanel/list_virtuals
-        /var/opencore/bin/postarray add transport_maps hash:/etc/postfix/openpanel/list_transports
-        /var/opencore/bin/postarray add virtual_mailbox_maps hash:/etc/postfix/openpanel/list_virtuals
+        /var/openpanel/bin/postarray add transport_maps hash:/etc/postfix/openpanel/list_transports
+        /var/openpanel/bin/postarray add virtual_mailbox_maps hash:/etc/postfix/openpanel/list_virtuals
         invoke-rc.d openpanel-core reload
     ;;
 
